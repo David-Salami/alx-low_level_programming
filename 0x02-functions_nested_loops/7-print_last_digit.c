@@ -8,6 +8,9 @@
  */
 int print_last_digit(int c)
 {
-if (c => '0' && c <= '9')
-return (c)
+if (c > '0' && c <= '9')
+return (c);
+else
+_putchar(last_digit + '0')
+ return (last_digit);
 }

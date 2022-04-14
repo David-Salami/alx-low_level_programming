@@ -6,9 +6,9 @@
  * Return: give 1 or 0
  */
 
-int _isupper(int c);
+int _isupper(int c)
 {
-if (c >= 'A'; && C <= 'Z')
+if (c >= 'A' && C <= 'Z')
 {
 return (1);
 }

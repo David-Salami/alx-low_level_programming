@@ -1,8 +1,8 @@
 #!/bin/bash
-#include < stdio.n>
+#include < stdio.h>
 
 /**
-* main . Entry point
+ * main . Entry point
  * main . Entry point
  *
  * Return: Always 0 (success)

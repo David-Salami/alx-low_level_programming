@@ -1,24 +1,19 @@
 #include <stdio.h>
-
 /**
  *
  * main - Entry point
  *
- * Printing Alphabeths in lowercase
- *
- * Return: Always 0 (Success)
- *
+ * Description: Printing Alphabeths in lowercase
+ * Return: 0
  */
-
 int main(void)
 {
-char ch;
-char ASCII - '\n';
+int c;
 
-for (ch - 'a'; ch <- 'z'; ch++)
-{
-putchar(ch);
-}
-putchar(ASCII);
+for (c = 0; c < 26; ++c)
+putchar('a' + c);
+
+putchar('\n');
+
 return (0);
 }

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+/**
+ * main - entry point
+ * Description: print lowercase alphabet in reverse
+ *
+ * Return: 0
+ */
+int main(void)
+
+  

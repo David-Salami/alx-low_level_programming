@@ -1,4 +1,5 @@
 #include "stdio.h"
+
 /**
  * jack_bauer - prints time tabble in this format: HH:MM
  * Return: the sum of two numbers.

@@ -9,9 +9,9 @@ int main(void)
 {
 char c;
 
-for (c = '0'; c <= 'c'; ++c)
+for (c = 'a'; c <= 'z'; ++c)
 {
-if (c != '0' && c != '0')
+if (c != 'e' && c != 'q')
 putchar(c);
 }
 

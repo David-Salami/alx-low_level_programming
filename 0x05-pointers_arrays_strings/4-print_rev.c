@@ -16,7 +16,7 @@ continue;
 n = i - 1;
 for (i = n; i >= 0 ; i--)
 {
-_putchar(s[i]);
+putchar(s[i]);
 }
 _putchar('\n');
 return;

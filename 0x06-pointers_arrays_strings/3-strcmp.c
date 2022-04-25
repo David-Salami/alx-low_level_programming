@@ -2,9 +2,9 @@
 
 /**
  * _strcmp - compares two strings
- * @s1: first string 
- * @s2: second string
- * Return:  s1[i] - s2[i] 
+ * @s1: First string
+ * @s2: Second string
+ * Return: s1[i] - s2[i]
  */
 
 int _strcmp(char *s1, char *s2)

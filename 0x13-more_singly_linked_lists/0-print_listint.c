@@ -18,6 +18,5 @@ printf("[0] (nil)\n");
 cont++;
 h = h->next;
 }
-
 return (cont);
 }

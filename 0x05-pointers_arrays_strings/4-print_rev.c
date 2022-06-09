@@ -1,23 +1,26 @@
 #include "main.h"
 
 /**
- * print_rev - print a string
- * @s: pointer char
- * Return: char
+  * print_rev - prints string
+  * @s: input string
+  * Return: no return
  */
+
 void print_rev(char *s)
 {
-int i, n;
+int count = 0;
 
-for (i = 0; s[i] != '\0'; i++)
+while (*s != '\0')
 {
-continue;
+s++;
+count++;
 }
-n = i - 1;
-for (i = n; i >= 0 ; i--)
+
+while (count > 0)
 {
-_putchar(s[i]);
+s--;
+_putchar(*s);
+count--;
 }
 _putchar('\n');
-return;
 }

@@ -1,14 +1,12 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - function that adds two int and return result
- * @a: first inputed variable
- * @b: second inputed variable
- * return: zero
+ * add - adds two integers and returns the result
+ * @a: an integer to add to b
+ * @b: an integer to add to a
+ * Return: Void.
  */
 
 int add(int a, int b)
 {
-return(a + b);
+return (a + b);
 }

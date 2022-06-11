@@ -1,16 +1,20 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "lists.h"
+#include "../lists.h"
+
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for ALX School students.
  *
  * Return: Always 0.
- */ int main(void) {
+*/
+int main(void)
+{
 list_t *head;
 list_t *new;
 list_t hello = {"World", 5, NULL};
 size_t n;
+
 head = &hello;
 new = malloc(sizeof(list_t));
 if (new == NULL)

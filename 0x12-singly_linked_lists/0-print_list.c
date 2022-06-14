@@ -32,6 +32,5 @@ node_count += 1;
 
 /*print for the last node*/
 printf("[%d] %s\n", h->len, h->str);
-
 return (node_count);
 }

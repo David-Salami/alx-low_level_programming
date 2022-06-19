@@ -1,52 +1,32 @@
-#ifndef LISTS
-#define LISTS
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "lists.h"
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * print_listint - a function that prints all elements of a list
  *
- * Description: singly linked list node structure
- * for Holberton project
- */
-typedef struct list_s
+ * @h: pointer to first node
+ *
+ * Return: the number of nodes
+*/
+size_t print_listint(const listint_t *h)
 {
-char *str;
-unsigned int len;
-struct list_s *next;
-} list_t;
+size_t node_count = 1;
 
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, const char *str);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
+/* return 0 as no of nodes when h is null*/
+if (h == NULL)
+return (0);
 
-#endif
-
-#include "stdlib.h"
-
-/**
- * print_list - prints all the elements of a list_t list.
- * @h: pointer to the list.
- * Return: number of nodes.
- **/
-size_t print_list(const list_t *h)
+while (h->next != NULL)
 {
-size_t cont = 0;
+printf("%d\n", h->n);
 
-while (h)
-{
-if (h->str)
-printf("[%u] %s\n", h->len, h->str);
-else
-printf("[0] (nil)\n");
-cont++;
+/*go to the next node*/
 h = h->next;
+/*count no of nodes*/
+node_count++;
 }
-return (cont);
+
+/*print last node*/
+printf("%d\n", h->n);
+
+return (node_count);
 }
